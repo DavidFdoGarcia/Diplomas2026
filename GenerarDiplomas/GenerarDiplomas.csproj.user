@@ -16,6 +16,9 @@
     <Compile Update="FrmCursoPonente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmGenerarDiploma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -23,6 +26,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmPonente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmReconocimientoPonente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmSede.cs">

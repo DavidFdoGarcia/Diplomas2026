@@ -35,6 +35,7 @@
             dgvAsistencia = new DataGridView();
             btnGuardar = new Button();
             errorProvider1 = new ErrorProvider(components);
+            chkAsistioTodas = new CheckBox();
             ((System.ComponentModel.ISupportInitialize)dgvAsistencia).BeginInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
             SuspendLayout();
@@ -101,11 +102,22 @@
             // 
             errorProvider1.ContainerControl = this;
             // 
+            // chkAsistioTodas
+            // 
+            chkAsistioTodas.AutoSize = true;
+            chkAsistioTodas.Location = new Point(530, 34);
+            chkAsistioTodas.Name = "chkAsistioTodas";
+            chkAsistioTodas.Size = new Size(202, 27);
+            chkAsistioTodas.TabIndex = 5;
+            chkAsistioTodas.Text = "ASISTIÓ A TODAS";
+            chkAsistioTodas.UseVisualStyleBackColor = true;
+            // 
             // FrmAsistenciaSesion
             // 
             AutoScaleDimensions = new SizeF(11F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1107, 590);
+            Controls.Add(chkAsistioTodas);
             Controls.Add(btnGuardar);
             Controls.Add(dgvAsistencia);
             Controls.Add(btnCargarAlumnos);
@@ -121,6 +133,7 @@
             Controls.SetChildIndex(btnCargarAlumnos, 0);
             Controls.SetChildIndex(dgvAsistencia, 0);
             Controls.SetChildIndex(btnGuardar, 0);
+            Controls.SetChildIndex(chkAsistioTodas, 0);
             ((System.ComponentModel.ISupportInitialize)dgvAsistencia).EndInit();
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);
@@ -135,5 +148,6 @@
         private DataGridView dgvAsistencia;
         private Button btnGuardar;
         private ErrorProvider errorProvider1;
+        private CheckBox chkAsistioTodas;
     }
 }

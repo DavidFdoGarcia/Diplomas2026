@@ -110,104 +110,123 @@ namespace GenerarDiplomas
 
         private void GenerarPDF(string nombre, string curso, string dia, string mes, string anio, string ruta, string nombrePonente)
         {
-            QuestPDF.Settings.License = LicenseType.Community;
-
-            string rutaPlantilla = @"C:\Users\PC\Desktop\GenerarDiplomas\PlantillasDiplomas\DiplomadecertificaciónPCSolución.png";
-
-            if (!File.Exists(rutaPlantilla))
+            try
             {
-                MessageBox.Show("No se encontró la plantilla:\n" + rutaPlantilla);
-                return;
-            }
+                QuestPDF.Settings.License = LicenseType.Community;
 
-            QuestPDF.Fluent.Document.Create(container =>
-            {
-                container.Page(page =>
+                string rutaPlantilla = Path.GetFullPath(
+                    Path.Combine(
+                        AppDomain.CurrentDomain.BaseDirectory,
+                        @"..\..\..\PlantillasDiplomas\CONTABILIDAD.png"
+                    )
+                );
+
+                if (!File.Exists(rutaPlantilla))
                 {
-                    page.Size(PageSizes.A4.Landscape());
-                    page.Margin(0);
+                    MessageBox.Show("No se encontró la plantilla:\n" + rutaPlantilla);
+                    return;
+                }
 
-                    page.Content().Layers(layers =>
+                QuestPDF.Fluent.Document.Create(container =>
+                {
+                    container.Page(page =>
                     {
-                        layers.PrimaryLayer().Image(rutaPlantilla);
+                        page.Size(PageSizes.A4.Landscape());
+                        page.Margin(0);
 
-                        layers.Layer().Column(col =>
+                        page.Content().Layers(layers =>
                         {
-                            col.Spacing(0);
+                            // PLANTILLA DE FONDO
+                            layers.PrimaryLayer()
+                                .Image(rutaPlantilla)
+                                .FitArea();
 
-                            // NOMBRE
-                            col.Item().Height(265);
-                            col.Item().AlignCenter().Text(nombre)
-                                .FontSize(27)
-                                .Bold()
-                                .Italic()
-                                .FontColor(Colors.Black);
-
-                            //col.Item().AlignCenter().Width(520).LineHorizontal(1);
-
-                            // CURSO
-                            col.Item().Height(35);
-                            col.Item().Row(row =>
+                            // TEXTOS ENCIMA
+                            layers.Layer().Column(col =>
                             {
-                                row.ConstantItem(490);
+                                col.Spacing(0);
+                                // =========================
+                                // NOMBRE
+                                // =========================
+                                col.Item().Height(225);
 
-                                row.ConstantItem(350).AlignLeft().Text(curso)
-                                    .FontSize(18)
-                                    .FontColor(Colors.Black);
-                            });
-
-                       
-
-                            // =========================
-                            // FECHA (DÍA MES AÑO)
-                            // =========================
-                            col.Item().Height(7);
-                            col.Item().Row(row =>
-                            {
-                                row.ConstantItem(300); // mueve todo
-
-                                row.ConstantItem(100).AlignLeft().Text(dia)
-                                    .FontSize(18);
-
-                                row.ConstantItem(20);
-
-                                row.ConstantItem(120).AlignLeft().Text(mes)
-                                    .FontSize(18);
-
-                                row.ConstantItem(20);
-
-                                row.ConstantItem(80).AlignLeft().Text(anio)
-                                    .FontSize(18);
-                            });
-
-                            // PONENTE
-                            col.Item().Height(118);
-                            col.Item().Row(row =>
-                            {
-                                row.ConstantItem(690);
-
-                                row.ConstantItem(220).Column(firma =>
+                                col.Item().Row(row =>
                                 {
-                                    firma.Item().AlignCenter().Text(nombrePonente)
-                                        .FontSize(10)
-                                        .FontColor(Colors.Black);
+                                    row.ConstantItem(320); // 👈 AJUSTA ESTE NÚMERO
 
-                                    firma.Item().AlignCenter().Text("Director General")
-                                        .FontSize(12)
+                                    row.RelativeItem().AlignLeft().Text(nombre)
+                                        .FontSize(27)
                                         .Bold()
+                                        .Italic()
                                         .FontColor(Colors.Black);
+                                });
+
+                                // =========================
+                                // CURSO
+                                // =========================
+                                col.Item().Height(65);
+
+                                col.Item().Row(row =>
+                                {
+                                    row.ConstantItem(300);
+
+                                    row.ConstantItem(500).AlignLeft().Text(curso)
+                                        .FontSize(18)
+                                        .FontColor(Colors.Black);
+                                });
+
+                                // =========================
+                                // FECHA (UNA SOLA LÍNEA)
+                                // =========================
+                                col.Item().Height(25);
+
+                                col.Item().Row(row =>
+                                {
+                                    row.ConstantItem(330); // mueve izquierda/derecha
+
+                                    row.ConstantItem(400).AlignLeft().Text($"{dia} de {mes} de {anio}")
+                                        .FontSize(18)
+                                        .FontColor(Colors.Black);
+                                });
+
+                                // =========================
+                                // PONENTE / FIRMA
+                                // =========================
+                                col.Item().Height(118);
+
+                                col.Item().Row(row =>
+                                {
+                                    row.ConstantItem(690);
+
+                                    row.ConstantItem(220).Column(firma =>
+                                    {
+                                        firma.Item().AlignCenter().Text(nombrePonente)
+                                            .FontSize(10)
+                                            .FontColor(Colors.Black);
+
+                                        firma.Item().AlignCenter().Text("Director General")
+                                            .FontSize(12)
+                                            .Bold()
+                                            .FontColor(Colors.Black);
+                                    });
                                 });
                             });
                         });
                     });
-                });
-            })
-            .GeneratePdf(ruta);
+                })
+                .GeneratePdf(ruta);
+
+                MessageBox.Show("PDF generado correctamente.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al generar PDF:\n\n" + ex.Message);
+            }
         }
         private bool GenerarDiplomaDesdeBD(int idInscripcion, bool mostrarMensajes = true)
         {
             string query = @"
-        SELECT 
+        SELECT TOP 1
             a.NombreCompleto,
             c.NombreCurso,
             c.FechaFin AS FechaCurso,
@@ -220,10 +239,10 @@ namespace GenerarDiplomas
         INNER JOIN vw_AsistenciaPorCurso v ON v.IdInscripcion = i.IdInscripcion
         LEFT JOIN CursoPonente cp 
             ON cp.IdCurso = c.IdCurso
-           AND ISNULL(cp.OrdenFirma, 1) = 1
         LEFT JOIN Ponente p 
             ON p.IdPonente = cp.IdPonente
-        WHERE i.IdInscripcion = @id";
+        WHERE i.IdInscripcion = @id
+        ORDER BY p.NombreCompleto";
 
             var parametros = new Dictionary<string, object>()
     {

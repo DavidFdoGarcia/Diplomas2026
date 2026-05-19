@@ -10,7 +10,7 @@ namespace GenerarDiplomas.Clases
         {
             public static SqlConnection Conectar()
             {
-                string ruta = @"C:\SistemaServicios\config.ini";
+                string ruta = @"C:\SistemaDiplomas\config.ini";
 
                 Ini ini = new Ini(ruta);
 

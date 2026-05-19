@@ -1,22 +1,82 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\GenerarDiplomas\\",
+  "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|c:\\users\\pc\\desktop\\generardiplomas\\frmgenerardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmgenerardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|c:\\users\\pc\\desktop\\diplomasdavidc#\\diplomas\\generardiplomas\\frmreconocimientoponente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmreconocimientoponente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|C:\\Users\\PC\\Desktop\\GenerarDiplomas\\frmgenerardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmgenerardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\frmreconocimientoponente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmreconocimientoponente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|c:\\users\\pc\\desktop\\generardiplomas\\frrmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|c:\\users\\pc\\desktop\\diplomasdavidc#\\diplomas\\generardiplomas\\frmcurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmcurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\frrmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frrmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|c:\\users\\pc\\desktop\\diplomasdavidc#\\diplomas\\generardiplomas\\frmtema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmtema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\frmtema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmtema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|c:\\users\\pc\\desktop\\diplomasdavidc#\\diplomas\\generardiplomas\\frrmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frrmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|C:\\Users\\PC\\Desktop\\GenerarDiplomas\\frrmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frrmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|c:\\users\\pc\\desktop\\diplomasdavidc#\\diplomas\\generardiplomas\\clases\\ini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:clases\\ini.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|c:\\users\\pc\\desktop\\diplomasdavidc#\\diplomas\\generardiplomas\\frmgenerardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmgenerardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\frmgenerardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmgenerardiploma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|c:\\users\\pc\\desktop\\diplomasdavidc#\\diplomas\\generardiplomas\\frmcursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmcursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\frmcursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmcursos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\frmsesioncurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmsesioncurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|c:\\users\\pc\\desktop\\diplomasdavidc#\\diplomas\\generardiplomas\\frmcursos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmcursos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\frminscripcioncurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frminscripcioncurso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\frmponente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmponente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|c:\\users\\pc\\desktop\\diplomasdavidc#\\diplomas\\generardiplomas\\frmponente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmponente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|c:\\users\\pc\\desktop\\diplomasdavidc#\\diplomas\\generardiplomas\\frmponente.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmponente.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|c:\\users\\pc\\desktop\\diplomasdavidc#\\diplomas\\generardiplomas\\frmreconocimientoponente.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EBCBE5A-ECA7-EF44-091C-89E2DF30C3D6}|GenerarDiplomas.csproj|solutionrelative:frmreconocimientoponente.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +86,238 @@
       "DocumentGroups": [
         {
           "DockedWidth": 10,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmGenerarDiploma.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\GenerarDiplomas\\FrmGenerarDiploma.cs",
-              "RelativeDocumentMoniker": "FrmGenerarDiploma.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\GenerarDiplomas\\FrmGenerarDiploma.cs",
-              "RelativeToolTip": "FrmGenerarDiploma.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAuwK0AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:37:05.96Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmGenerarDiploma.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\GenerarDiplomas\\FrmGenerarDiploma.cs",
-              "RelativeDocumentMoniker": "FrmGenerarDiploma.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\GenerarDiplomas\\FrmGenerarDiploma.cs [Dise\u00F1o]",
-              "RelativeToolTip": "FrmGenerarDiploma.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:36:26.134Z"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "FrrmPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\GenerarDiplomas\\FrrmPrincipal.cs",
-              "RelativeDocumentMoniker": "FrrmPrincipal.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\GenerarDiplomas\\FrrmPrincipal.cs",
-              "RelativeToolTip": "FrrmPrincipal.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAkwE8AAAAXAAAAAAAAAA==",
+              "Title": "FrmCurso.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmCurso.cs",
+              "RelativeDocumentMoniker": "FrmCurso.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmCurso.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmCurso.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T16:28:59.604Z",
+              "WhenOpened": "2026-05-19T17:14:26.963Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmTema.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmTema.cs",
+              "RelativeDocumentMoniker": "FrmTema.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmTema.cs",
+              "RelativeToolTip": "FrmTema.cs",
+              "ViewState": "AgIAAPsAAAAAAAAAAAAIwBEBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T17:47:43.133Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmTema.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmTema.cs",
+              "RelativeDocumentMoniker": "FrmTema.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmTema.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmTema.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T17:18:20.71Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "FrrmPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\GenerarDiplomas\\FrrmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrrmPrincipal.cs",
               "RelativeDocumentMoniker": "FrrmPrincipal.cs",
-              "ToolTip": "C:\\Users\\PC\\Desktop\\GenerarDiplomas\\FrrmPrincipal.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrrmPrincipal.cs [Dise\u00F1o]",
               "RelativeToolTip": "FrrmPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-14T18:03:33.228Z"
+              "WhenOpened": "2026-04-14T18:03:33.228Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrrmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrrmPrincipal.cs",
+              "RelativeDocumentMoniker": "FrrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrrmPrincipal.cs",
+              "RelativeToolTip": "FrrmPrincipal.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAmwGEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T16:32:36.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmReconocimientoPonente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmReconocimientoPonente.cs",
+              "RelativeDocumentMoniker": "FrmReconocimientoPonente.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmReconocimientoPonente.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "FrmReconocimientoPonente.cs [Dise\u00F1o]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T16:21:26.336Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmReconocimientoPonente.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmReconocimientoPonente.cs",
+              "RelativeDocumentMoniker": "FrmReconocimientoPonente.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmReconocimientoPonente.cs*",
+              "RelativeToolTip": "FrmReconocimientoPonente.cs*",
+              "ViewState": "AgIAAJ4AAAAAAAAAAAAswLUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T16:25:21.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ini.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\Clases\\ini.cs",
+              "RelativeDocumentMoniker": "Clases\\ini.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\Clases\\ini.cs",
+              "RelativeToolTip": "Clases\\ini.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T18:56:22.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmGenerarDiploma.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmGenerarDiploma.cs",
+              "RelativeDocumentMoniker": "FrmGenerarDiploma.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmGenerarDiploma.cs",
+              "RelativeToolTip": "FrmGenerarDiploma.cs",
+              "ViewState": "AgIAAA4BAAAAAAAAAAAswCoBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T17:56:30.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmGenerarDiploma.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmGenerarDiploma.cs",
+              "RelativeDocumentMoniker": "FrmGenerarDiploma.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmGenerarDiploma.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmGenerarDiploma.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T17:56:24.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FrmCursos.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmCursos.cs",
+              "RelativeDocumentMoniker": "FrmCursos.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmCursos.cs",
+              "RelativeToolTip": "FrmCursos.cs",
+              "ViewState": "AgIAAAsBAAAAAAAAAAAmwCMBAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T17:29:17.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrmCursos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmCursos.cs",
+              "RelativeDocumentMoniker": "FrmCursos.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmCursos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmCursos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T17:21:44.558Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FrmSesionCurso.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmSesionCurso.cs",
+              "RelativeDocumentMoniker": "FrmSesionCurso.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmSesionCurso.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmSesionCurso.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T17:18:12.898Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FrmCursos.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmCursos.Designer.cs",
+              "RelativeDocumentMoniker": "FrmCursos.Designer.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmCursos.Designer.cs",
+              "RelativeToolTip": "FrmCursos.Designer.cs",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAEwJ8AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T17:42:56.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FrmInscripcionCurso.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmInscripcionCurso.cs",
+              "RelativeDocumentMoniker": "FrmInscripcionCurso.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmInscripcionCurso.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmInscripcionCurso.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T17:19:54.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FrmPonente.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmPonente.cs",
+              "RelativeDocumentMoniker": "FrmPonente.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmPonente.cs",
+              "RelativeToolTip": "FrmPonente.cs",
+              "ViewState": "AgIAAAUBAAAAAAAAAAAUwCIBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T16:57:28.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FrmPonente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmPonente.cs",
+              "RelativeDocumentMoniker": "FrmPonente.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmPonente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "FrmPonente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T16:51:41.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FrmPonente.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmPonente.Designer.cs",
+              "RelativeDocumentMoniker": "FrmPonente.Designer.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmPonente.Designer.cs",
+              "RelativeToolTip": "FrmPonente.Designer.cs",
+              "ViewState": "AgIAAN0AAAAAAAAAAAAmwOwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T16:58:28.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FrmReconocimientoPonente.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmReconocimientoPonente.Designer.cs",
+              "RelativeDocumentMoniker": "FrmReconocimientoPonente.Designer.cs",
+              "ToolTip": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\FrmReconocimientoPonente.Designer.cs",
+              "RelativeToolTip": "FrmReconocimientoPonente.Designer.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAEwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-19T16:31:57.693Z",
+              "EditorCaption": ""
             }
           ]
         }

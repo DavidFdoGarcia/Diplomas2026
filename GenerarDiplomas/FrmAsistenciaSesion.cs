@@ -1,10 +1,7 @@
 ﻿using GenerarDiplomas.Clases;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace GenerarDiplomas
@@ -19,7 +16,6 @@ namespace GenerarDiplomas
         private void FrmAsistenciaSesion_Load(object sender, EventArgs e)
         {
             EstilosUI.AplicarEstiloFormulario(this);
-
             EstilosUI.EstiloBoton(btnCargarAlumnos);
             EstilosUI.EstiloBoton(btnGuardar);
 
@@ -27,8 +23,9 @@ namespace GenerarDiplomas
                 EstilosUI.EstiloBoton(btnSalir);
 
             ConfigurarGrid();
-            CargarSesiones();
+            CargarCursos();
         }
+
         private void ConfigurarGrid()
         {
             dgvAsistencia.Columns.Clear();
@@ -40,123 +37,107 @@ namespace GenerarDiplomas
             dgvAsistencia.RowHeadersVisible = false;
             dgvAsistencia.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
-            DataGridViewTextBoxColumn colIdInscripcion = new DataGridViewTextBoxColumn();
-            colIdInscripcion.Name = "IdInscripcion";
-            colIdInscripcion.HeaderText = "IdInscripcion";
-            colIdInscripcion.DataPropertyName = "IdInscripcion";
-            colIdInscripcion.Visible = false;
+            dgvAsistencia.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "IdInscripcion",
+                HeaderText = "IdInscripcion",
+                DataPropertyName = "IdInscripcion",
+                Visible = false
+            });
 
-            DataGridViewTextBoxColumn colAlumno = new DataGridViewTextBoxColumn();
-            colAlumno.Name = "Alumno";
-            colAlumno.HeaderText = "Alumno";
-            colAlumno.DataPropertyName = "Alumno";
-            colAlumno.ReadOnly = true;
+            dgvAsistencia.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "Alumno",
+                HeaderText = "Alumno",
+                DataPropertyName = "Alumno",
+                ReadOnly = true
+            });
 
-            DataGridViewCheckBoxColumn colAsistio = new DataGridViewCheckBoxColumn();
-            colAsistio.Name = "Asistio";
-            colAsistio.HeaderText = "Asistió";
-            colAsistio.DataPropertyName = "Asistio";
+            dgvAsistencia.Columns.Add(new DataGridViewCheckBoxColumn
+            {
+                Name = "Asistio",
+                HeaderText = "Asistió",
+                DataPropertyName = "Asistio"
+            });
 
-            DataGridViewTextBoxColumn colHoraEntrada = new DataGridViewTextBoxColumn();
-            colHoraEntrada.Name = "HoraEntrada";
-            colHoraEntrada.HeaderText = "Hora Entrada";
-            colHoraEntrada.DataPropertyName = "HoraEntrada";
+            dgvAsistencia.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "HoraEntrada",
+                HeaderText = "Hora Entrada",
+                DataPropertyName = "HoraEntrada"
+            });
 
-            DataGridViewTextBoxColumn colHoraSalida = new DataGridViewTextBoxColumn();
-            colHoraSalida.Name = "HoraSalida";
-            colHoraSalida.HeaderText = "Hora Salida";
-            colHoraSalida.DataPropertyName = "HoraSalida";
+            dgvAsistencia.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "HoraSalida",
+                HeaderText = "Hora Salida",
+                DataPropertyName = "HoraSalida"
+            });
 
-            DataGridViewTextBoxColumn colObservaciones = new DataGridViewTextBoxColumn();
-            colObservaciones.Name = "Observaciones";
-            colObservaciones.HeaderText = "Observaciones";
-            colObservaciones.DataPropertyName = "Observaciones";
-
-            dgvAsistencia.Columns.Add(colIdInscripcion);
-            dgvAsistencia.Columns.Add(colAlumno);
-            dgvAsistencia.Columns.Add(colAsistio);
-            dgvAsistencia.Columns.Add(colHoraEntrada);
-            dgvAsistencia.Columns.Add(colHoraSalida);
-            dgvAsistencia.Columns.Add(colObservaciones);
+            dgvAsistencia.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "Observaciones",
+                HeaderText = "Observaciones",
+                DataPropertyName = "Observaciones"
+            });
         }
 
-        private void CargarSesiones()
+        private void CargarCursos()
         {
             string query = @"
-                SELECT 
-                    s.IdSesion,
-                    c.NombreCurso + ' - Sesión ' + CAST(s.NumeroSesion AS VARCHAR(10)) +
-                    ' - ' + CONVERT(VARCHAR(10), s.FechaSesion, 103) AS Texto
-                FROM SesionCurso s
-                INNER JOIN Curso c ON c.IdCurso = s.IdCurso
-                ORDER BY c.NombreCurso, s.NumeroSesion";
+                SELECT IdCurso, NombreCurso
+                FROM Curso
+                WHERE Activo = 1
+                ORDER BY NombreCurso";
 
             DataTable dt = consultas.Consultar(query, new Dictionary<string, object>());
 
             cmbSesion.DataSource = dt;
-            cmbSesion.DisplayMember = "Texto";
-            cmbSesion.ValueMember = "IdSesion";
+            cmbSesion.DisplayMember = "NombreCurso";
+            cmbSesion.ValueMember = "IdCurso";
             cmbSesion.SelectedIndex = -1;
         }
 
-        private void CargarAlumnosSesion()
+        private void CargarAlumnosCurso()
         {
             if (cmbSesion.SelectedIndex < 0)
             {
-                MessageBox.Show("Seleccione una sesión.");
+                MessageBox.Show("Seleccione un curso.");
                 return;
             }
 
-            int idSesion = Convert.ToInt32(cmbSesion.SelectedValue);
+            int idCurso = Convert.ToInt32(cmbSesion.SelectedValue);
 
             string query = @"
                 SELECT
                     i.IdInscripcion,
                     a.NombreCompleto AS Alumno,
-                    CAST(0 AS BIT) AS Asistio,
-                    '' AS HoraEntrada,
-                    '' AS HoraSalida,
-                    '' AS Observaciones
-                FROM SesionCurso s
-                INNER JOIN InscripcionCurso i ON i.IdCurso = s.IdCurso
+                    CAST(
+                        CASE 
+                            WHEN COUNT(s.IdSesion) > 0
+                             AND SUM(CASE WHEN ISNULL(asi.Asistio, 0) = 1 THEN 1 ELSE 0 END) = COUNT(s.IdSesion)
+                            THEN 1 ELSE 0 
+                        END AS BIT
+                    ) AS Asistio,
+                    ISNULL(CONVERT(VARCHAR(5), MAX(asi.HoraEntrada), 108), '16:00') AS HoraEntrada,
+                    ISNULL(CONVERT(VARCHAR(5), MAX(asi.HoraSalida), 108), '18:00') AS HoraSalida,
+                    ISNULL(MAX(asi.Observaciones), '') AS Observaciones
+                FROM InscripcionCurso i
                 INNER JOIN Alumno a ON a.IdAlumno = i.IdAlumno
-                WHERE s.IdSesion = @IdSesion
+                LEFT JOIN SesionCurso s ON s.IdCurso = i.IdCurso
+                LEFT JOIN AsistenciaSesion asi 
+                    ON asi.IdSesion = s.IdSesion
+                   AND asi.IdInscripcion = i.IdInscripcion
+                WHERE i.IdCurso = @IdCurso
+                GROUP BY i.IdInscripcion, a.NombreCompleto
                 ORDER BY a.NombreCompleto";
 
             var parametros = new Dictionary<string, object>
             {
-                { "@IdSesion", idSesion }
+                { "@IdCurso", idCurso }
             };
 
             DataTable dt = consultas.Consultar(query, parametros);
-
-            string queryExistentes = @"
-                SELECT
-                    IdInscripcion,
-                    Asistio,
-                    CONVERT(VARCHAR(5), HoraEntrada, 108) AS HoraEntrada,
-                    CONVERT(VARCHAR(5), HoraSalida, 108) AS HoraSalida,
-                    Observaciones
-                FROM AsistenciaSesion
-                WHERE IdSesion = @IdSesion";
-
-            DataTable dtExistentes = consultas.Consultar(queryExistentes, parametros);
-
-            foreach (DataRow row in dt.Rows)
-            {
-                foreach (DataRow existente in dtExistentes.Rows)
-                {
-                    if (Convert.ToInt32(row["IdInscripcion"]) == Convert.ToInt32(existente["IdInscripcion"]))
-                    {
-                        row["Asistio"] = Convert.ToBoolean(existente["Asistio"]);
-                        row["HoraEntrada"] = existente["HoraEntrada"] == DBNull.Value ? "" : existente["HoraEntrada"].ToString();
-                        row["HoraSalida"] = existente["HoraSalida"] == DBNull.Value ? "" : existente["HoraSalida"].ToString();
-                        row["Observaciones"] = existente["Observaciones"] == DBNull.Value ? "" : existente["Observaciones"].ToString();
-                        break;
-                    }
-                }
-            }
-
             dgvAsistencia.DataSource = dt;
         }
 
@@ -167,7 +148,7 @@ namespace GenerarDiplomas
 
             if (cmbSesion.SelectedIndex < 0)
             {
-                errorProvider1.SetError(cmbSesion, "Seleccione una sesión.");
+                errorProvider1.SetError(cmbSesion, "Seleccione un curso.");
                 valido = false;
             }
 
@@ -180,18 +161,44 @@ namespace GenerarDiplomas
             return valido;
         }
 
+        private DataTable ObtenerSesionesCurso(int idCurso)
+        {
+            string query = @"
+                SELECT IdSesion
+                FROM SesionCurso
+                WHERE IdCurso = @IdCurso
+                ORDER BY NumeroSesion";
+
+            var parametros = new Dictionary<string, object>
+            {
+                { "@IdCurso", idCurso }
+            };
+
+            return consultas.Consultar(query, parametros);
+        }
+
         private void GuardarAsistencia()
         {
             if (!ValidarGrid())
                 return;
 
-            int idSesion = Convert.ToInt32(cmbSesion.SelectedValue);
+            int idCurso = Convert.ToInt32(cmbSesion.SelectedValue);
+            DataTable sesiones = ObtenerSesionesCurso(idCurso);
+
+            if (sesiones.Rows.Count == 0)
+            {
+                MessageBox.Show("Este curso no tiene sesiones creadas.");
+                return;
+            }
 
             foreach (DataGridViewRow row in dgvAsistencia.Rows)
             {
+                if (row.IsNewRow) continue;
+
                 int idInscripcion = Convert.ToInt32(row.Cells["IdInscripcion"].Value);
-                bool asistio = row.Cells["Asistio"].Value != DBNull.Value &&
-                               row.Cells["Asistio"].Value != null &&
+
+                bool asistio = row.Cells["Asistio"].Value != null &&
+                               row.Cells["Asistio"].Value != DBNull.Value &&
                                Convert.ToBoolean(row.Cells["Asistio"].Value);
 
                 string horaEntradaTexto = row.Cells["HoraEntrada"].Value == null ? "" : row.Cells["HoraEntrada"].Value.ToString().Trim();
@@ -207,91 +214,87 @@ namespace GenerarDiplomas
                 if (!string.IsNullOrWhiteSpace(horaSalidaTexto))
                     horaSalida = TimeSpan.Parse(horaSalidaTexto);
 
-                string queryExiste = @"
-                    SELECT COUNT(*)
-                    FROM AsistenciaSesion
-                    WHERE IdSesion = @IdSesion
-                      AND IdInscripcion = @IdInscripcion";
-
-                var parametrosExiste = new Dictionary<string, object>
+                foreach (DataRow sesion in sesiones.Rows)
                 {
-                    { "@IdSesion", idSesion },
-                    { "@IdInscripcion", idInscripcion }
-                };
+                    int idSesion = Convert.ToInt32(sesion["IdSesion"]);
 
-                int existe = Convert.ToInt32(consultas.EjecutarEscalar(queryExiste, parametrosExiste));
-
-                if (existe == 0)
-                {
-                    string insert = @"
-                        INSERT INTO AsistenciaSesion
-                        (
-                            IdSesion,
-                            IdInscripcion,
-                            Asistio,
-                            HoraEntrada,
-                            HoraSalida,
-                            Observaciones
-                        )
-                        VALUES
-                        (
-                            @IdSesion,
-                            @IdInscripcion,
-                            @Asistio,
-                            @HoraEntrada,
-                            @HoraSalida,
-                            @Observaciones
-                        )";
-
-                    var parametrosInsert = new Dictionary<string, object>
-                    {
-                        { "@IdSesion", idSesion },
-                        { "@IdInscripcion", idInscripcion },
-                        { "@Asistio", asistio },
-                        { "@HoraEntrada", horaEntrada },
-                        { "@HoraSalida", horaSalida },
-                        { "@Observaciones", string.IsNullOrWhiteSpace(observaciones) ? DBNull.Value : observaciones }
-                    };
-
-                    consultas.Ejecutar(insert, parametrosInsert);
-                }
-                else
-                {
-                    string update = @"
-                        UPDATE AsistenciaSesion
-                        SET Asistio = @Asistio,
-                            HoraEntrada = @HoraEntrada,
-                            HoraSalida = @HoraSalida,
-                            Observaciones = @Observaciones
+                    string queryExiste = @"
+                        SELECT COUNT(*)
+                        FROM AsistenciaSesion
                         WHERE IdSesion = @IdSesion
                           AND IdInscripcion = @IdInscripcion";
 
-                    var parametrosUpdate = new Dictionary<string, object>
+                    var parametrosExiste = new Dictionary<string, object>
                     {
                         { "@IdSesion", idSesion },
-                        { "@IdInscripcion", idInscripcion },
-                        { "@Asistio", asistio },
-                        { "@HoraEntrada", horaEntrada },
-                        { "@HoraSalida", horaSalida },
-                        { "@Observaciones", string.IsNullOrWhiteSpace(observaciones) ? DBNull.Value : observaciones }
+                        { "@IdInscripcion", idInscripcion }
                     };
 
-                    consultas.Ejecutar(update, parametrosUpdate);
+                    int existe = Convert.ToInt32(consultas.EjecutarEscalar(queryExiste, parametrosExiste));
+
+                    if (existe == 0)
+                    {
+                        string insert = @"
+                            INSERT INTO AsistenciaSesion
+                            (IdSesion, IdInscripcion, Asistio, HoraEntrada, HoraSalida, Observaciones)
+                            VALUES
+                            (@IdSesion, @IdInscripcion, @Asistio, @HoraEntrada, @HoraSalida, @Observaciones)";
+
+                        var parametrosInsert = new Dictionary<string, object>
+                        {
+                            { "@IdSesion", idSesion },
+                            { "@IdInscripcion", idInscripcion },
+                            { "@Asistio", asistio },
+                            { "@HoraEntrada", horaEntrada },
+                            { "@HoraSalida", horaSalida },
+                            { "@Observaciones", string.IsNullOrWhiteSpace(observaciones) ? DBNull.Value : observaciones }
+                        };
+
+                        consultas.Ejecutar(insert, parametrosInsert);
+                    }
+                    else
+                    {
+                        string update = @"
+                            UPDATE AsistenciaSesion
+                            SET Asistio = @Asistio,
+                                HoraEntrada = @HoraEntrada,
+                                HoraSalida = @HoraSalida,
+                                Observaciones = @Observaciones
+                            WHERE IdSesion = @IdSesion
+                              AND IdInscripcion = @IdInscripcion";
+
+                        var parametrosUpdate = new Dictionary<string, object>
+                        {
+                            { "@IdSesion", idSesion },
+                            { "@IdInscripcion", idInscripcion },
+                            { "@Asistio", asistio },
+                            { "@HoraEntrada", horaEntrada },
+                            { "@HoraSalida", horaSalida },
+                            { "@Observaciones", string.IsNullOrWhiteSpace(observaciones) ? DBNull.Value : observaciones }
+                        };
+
+                        consultas.Ejecutar(update, parametrosUpdate);
+                    }
                 }
             }
 
-            MessageBox.Show("Asistencia guardada correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            CargarAlumnosSesion();
+            MessageBox.Show("Asistencia guardada correctamente para todas las sesiones del curso.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            CargarAlumnosCurso();
         }
 
         private void btnCargarAlumnos_Click(object sender, EventArgs e)
         {
-            CargarAlumnosSesion();
+            CargarAlumnosCurso();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             GuardarAsistencia();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

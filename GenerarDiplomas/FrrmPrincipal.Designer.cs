@@ -38,6 +38,9 @@
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
+            button5 = new Button();
+            btnAltaCursos = new Button();
+            btnReconocimiento = new Button();
             SuspendLayout();
             // 
             // btnSalir
@@ -46,14 +49,16 @@
             btnSalir.FlatAppearance.BorderSize = 0;
             btnSalir.FlatStyle = FlatStyle.Flat;
             btnSalir.ForeColor = Color.White;
-            btnSalir.Size = new Size(129, 35);
+            btnSalir.Margin = new Padding(2);
+            btnSalir.Size = new Size(106, 27);
             btnSalir.UseVisualStyleBackColor = false;
             // 
             // btnTema
             // 
-            btnTema.Location = new Point(525, 206);
+            btnTema.Location = new Point(548, 260);
+            btnTema.Margin = new Padding(2);
             btnTema.Name = "btnTema";
-            btnTema.Size = new Size(94, 29);
+            btnTema.Size = new Size(77, 23);
             btnTema.TabIndex = 1;
             btnTema.Text = "Tema";
             btnTema.UseVisualStyleBackColor = true;
@@ -61,9 +66,10 @@
             // 
             // btnSede
             // 
-            btnSede.Location = new Point(650, 206);
+            btnSede.Location = new Point(650, 260);
+            btnSede.Margin = new Padding(2);
             btnSede.Name = "btnSede";
-            btnSede.Size = new Size(94, 29);
+            btnSede.Size = new Size(77, 23);
             btnSede.TabIndex = 2;
             btnSede.Text = "Sede";
             btnSede.UseVisualStyleBackColor = true;
@@ -71,9 +77,10 @@
             // 
             // btnPonente
             // 
-            btnPonente.Location = new Point(774, 206);
+            btnPonente.Location = new Point(751, 260);
+            btnPonente.Margin = new Padding(2);
             btnPonente.Name = "btnPonente";
-            btnPonente.Size = new Size(94, 29);
+            btnPonente.Size = new Size(77, 23);
             btnPonente.TabIndex = 3;
             btnPonente.Text = "Ponente";
             btnPonente.UseVisualStyleBackColor = true;
@@ -81,9 +88,10 @@
             // 
             // btnAlumno
             // 
-            btnAlumno.Location = new Point(525, 263);
+            btnAlumno.Location = new Point(259, 42);
+            btnAlumno.Margin = new Padding(2);
             btnAlumno.Name = "btnAlumno";
-            btnAlumno.Size = new Size(94, 29);
+            btnAlumno.Size = new Size(77, 23);
             btnAlumno.TabIndex = 4;
             btnAlumno.Text = "Alumno";
             btnAlumno.UseVisualStyleBackColor = true;
@@ -91,9 +99,10 @@
             // 
             // btnCurso
             // 
-            btnCurso.Location = new Point(650, 263);
+            btnCurso.Location = new Point(650, 305);
+            btnCurso.Margin = new Padding(2);
             btnCurso.Name = "btnCurso";
-            btnCurso.Size = new Size(94, 29);
+            btnCurso.Size = new Size(77, 23);
             btnCurso.TabIndex = 5;
             btnCurso.Text = "Curso";
             btnCurso.UseVisualStyleBackColor = true;
@@ -101,18 +110,20 @@
             // 
             // button1
             // 
-            button1.Location = new Point(774, 263);
+            button1.Location = new Point(751, 305);
+            button1.Margin = new Padding(2);
             button1.Name = "button1";
-            button1.Size = new Size(175, 29);
+            button1.Size = new Size(143, 23);
             button1.TabIndex = 6;
             button1.Text = "Curso Ponente";
             button1.UseVisualStyleBackColor = true;
             // 
             // btnInscripcionCurso
             // 
-            btnInscripcionCurso.Location = new Point(774, 324);
+            btnInscripcionCurso.Location = new Point(236, 99);
+            btnInscripcionCurso.Margin = new Padding(2);
             btnInscripcionCurso.Name = "btnInscripcionCurso";
-            btnInscripcionCurso.Size = new Size(175, 29);
+            btnInscripcionCurso.Size = new Size(143, 23);
             btnInscripcionCurso.TabIndex = 7;
             btnInscripcionCurso.Text = "Inscripcion Curso";
             btnInscripcionCurso.UseVisualStyleBackColor = true;
@@ -120,9 +131,10 @@
             // 
             // button2
             // 
-            button2.Location = new Point(560, 324);
+            button2.Location = new Point(576, 353);
+            button2.Margin = new Padding(2);
             button2.Name = "button2";
-            button2.Size = new Size(175, 29);
+            button2.Size = new Size(143, 23);
             button2.TabIndex = 8;
             button2.Text = "secion Curso";
             button2.UseVisualStyleBackColor = true;
@@ -130,9 +142,10 @@
             // 
             // button3
             // 
-            button3.Location = new Point(345, 324);
+            button3.Location = new Point(236, 146);
+            button3.Margin = new Padding(2);
             button3.Name = "button3";
-            button3.Size = new Size(175, 29);
+            button3.Size = new Size(143, 23);
             button3.TabIndex = 9;
             button3.Text = "secion Curso";
             button3.UseVisualStyleBackColor = true;
@@ -140,19 +153,56 @@
             // 
             // button4
             // 
-            button4.Location = new Point(290, 206);
+            button4.Location = new Point(236, 193);
+            button4.Margin = new Padding(2);
             button4.Name = "button4";
-            button4.Size = new Size(175, 29);
+            button4.Size = new Size(143, 23);
             button4.TabIndex = 10;
             button4.Text = "Generar Diploma";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
+            // button5
+            // 
+            button5.Location = new Point(25, 25);
+            button5.Margin = new Padding(2);
+            button5.Name = "button5";
+            button5.Size = new Size(150, 57);
+            button5.TabIndex = 11;
+            button5.Text = "Reconocimiento Ponente";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
+            // btnAltaCursos
+            // 
+            btnAltaCursos.Location = new Point(25, 99);
+            btnAltaCursos.Margin = new Padding(2);
+            btnAltaCursos.Name = "btnAltaCursos";
+            btnAltaCursos.Size = new Size(96, 58);
+            btnAltaCursos.TabIndex = 12;
+            btnAltaCursos.Text = "Alta Cursos";
+            btnAltaCursos.UseVisualStyleBackColor = true;
+            btnAltaCursos.Click += btnAltaCursos_Click;
+            // 
+            // btnReconocimiento
+            // 
+            btnReconocimiento.Location = new Point(32, 204);
+            btnReconocimiento.Margin = new Padding(2);
+            btnReconocimiento.Name = "btnReconocimiento";
+            btnReconocimiento.Size = new Size(167, 59);
+            btnReconocimiento.TabIndex = 13;
+            btnReconocimiento.Text = "Reconocimiennto Ponente";
+            btnReconocimiento.UseVisualStyleBackColor = true;
+            btnReconocimiento.Click += btnReconocimiento_Click;
+            // 
             // FrrmPrincipal
             // 
-            AutoScaleDimensions = new SizeF(11F, 23F);
+            AutoScaleDimensions = new SizeF(9F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1100, 518);
+            ClientSize = new Size(900, 405);
+            Controls.Add(btnReconocimiento);
+            Controls.Add(btnAltaCursos);
+            Controls.Add(button5);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -163,7 +213,7 @@
             Controls.Add(btnPonente);
             Controls.Add(btnSede);
             Controls.Add(btnTema);
-            Margin = new Padding(6, 3, 6, 3);
+            Margin = new Padding(5, 2, 5, 2);
             Name = "FrrmPrincipal";
             Text = "FrrmPrincipal";
             Load += FrrmPrincipal_Load;
@@ -178,6 +228,9 @@
             Controls.SetChildIndex(button2, 0);
             Controls.SetChildIndex(button3, 0);
             Controls.SetChildIndex(button4, 0);
+            Controls.SetChildIndex(button5, 0);
+            Controls.SetChildIndex(btnAltaCursos, 0);
+            Controls.SetChildIndex(btnReconocimiento, 0);
             ResumeLayout(false);
         }
 
@@ -193,5 +246,8 @@
         private Button button2;
         private Button button3;
         private Button button4;
+        private Button button5;
+        private Button btnAltaCursos;
+        private Button btnReconocimiento;
     }
 }

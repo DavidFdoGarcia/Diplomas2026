@@ -9,7 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="PlantillasDiplomas\CONTABILIDAD.png" />
     <None Remove="PlantillasDiplomas\Diploma de certificación PCSolución.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="PlantillasDiplomas\CONTABILIDAD.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

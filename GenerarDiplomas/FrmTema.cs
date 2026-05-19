@@ -268,5 +268,10 @@ namespace GenerarDiplomas
             if (e.RowIndex >= 0)
                 CargarTemaSeleccionado();
         }
+
+        private void btnNuevo_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

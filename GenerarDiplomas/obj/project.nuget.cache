@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rw0hd022PRE=",
+  "dgSpecHash": "N7NaGhOMeLY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\Desktop\\GenerarDiplomas\\GenerarDiplomas.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\DiplomasDavidC#\\Diplomas\\GenerarDiplomas\\GenerarDiplomas.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.13\\microsoft.bcl.cryptography.9.0.13.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.data.sqlclient\\7.0.0\\microsoft.data.sqlclient.7.0.0.nupkg.sha512",

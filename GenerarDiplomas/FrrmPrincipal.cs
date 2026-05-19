@@ -79,5 +79,24 @@ namespace GenerarDiplomas
             FrmGenerarDiploma fgd = new FrmGenerarDiploma();
             fgd.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FrmReconocimientoPonente frmp = new FrmReconocimientoPonente();
+            frmp.Show();
+        }
+
+        private void btnAltaCursos_Click(object sender, EventArgs e)
+        {
+            FrmCursos frmmcu = new FrmCursos();
+            frmmcu.Show();
+        }
+
+        private void btnReconocimiento_Click(object sender, EventArgs e)
+        {
+            FrmReconocimientoPonente frmrp = new FrmReconocimientoPonente();
+            frmrp.Show();
+
+        }
     }
 }

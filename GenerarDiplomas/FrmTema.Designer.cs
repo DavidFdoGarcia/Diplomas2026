@@ -57,78 +57,79 @@
             btnSalir.FlatAppearance.BorderSize = 0;
             btnSalir.FlatStyle = FlatStyle.Flat;
             btnSalir.ForeColor = Color.White;
-            btnSalir.Location = new Point(1166, 581);
-            btnSalir.Size = new Size(129, 35);
+            btnSalir.Location = new Point(954, 455);
+            btnSalir.Margin = new Padding(2, 2, 2, 2);
+            btnSalir.Size = new Size(106, 27);
             btnSalir.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(13, 23);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(11, 18);
             label1.Name = "label1";
-            label1.Size = new Size(30, 23);
+            label1.Size = new Size(23, 18);
             label1.TabIndex = 0;
             label1.Text = "ID";
             // 
             // txtIdtema
             // 
-            txtIdtema.Location = new Point(69, 20);
+            txtIdtema.Location = new Point(56, 16);
+            txtIdtema.Margin = new Padding(2, 2, 2, 2);
             txtIdtema.Name = "txtIdtema";
-            txtIdtema.Size = new Size(125, 30);
+            txtIdtema.Size = new Size(103, 26);
             txtIdtema.TabIndex = 1;
             // 
             // txtDescripcion
             // 
-            txtDescripcion.Location = new Point(454, 5);
+            txtDescripcion.Location = new Point(371, 4);
+            txtDescripcion.Margin = new Padding(2, 2, 2, 2);
             txtDescripcion.Multiline = true;
             txtDescripcion.Name = "txtDescripcion";
-            txtDescripcion.Size = new Size(470, 128);
+            txtDescripcion.Size = new Size(385, 101);
             txtDescripcion.TabIndex = 3;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(332, 9);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(272, 7);
             label2.Name = "label2";
-            label2.Size = new Size(105, 23);
+            label2.Size = new Size(87, 18);
             label2.TabIndex = 2;
             label2.Text = "Descipción";
             // 
             // txtNombreTema
             // 
-            txtNombreTema.Location = new Point(106, 63);
+            txtNombreTema.Location = new Point(87, 49);
+            txtNombreTema.Margin = new Padding(2, 2, 2, 2);
             txtNombreTema.Name = "txtNombreTema";
-            txtNombreTema.Size = new Size(125, 30);
+            txtNombreTema.Size = new Size(103, 26);
             txtNombreTema.TabIndex = 5;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(3, 70);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(2, 55);
             label3.Name = "label3";
-            label3.Size = new Size(58, 23);
+            label3.Size = new Size(46, 18);
             label3.TabIndex = 4;
             label3.Text = "Tema";
             // 
             // Status
             // 
             Status.AutoSize = true;
-            Status.Location = new Point(945, 20);
-            Status.Margin = new Padding(4, 0, 4, 0);
+            Status.Location = new Point(773, 16);
             Status.Name = "Status";
-            Status.Size = new Size(66, 23);
+            Status.Size = new Size(52, 18);
             Status.TabIndex = 6;
             Status.Text = "Status";
             // 
             // rbActivo
             // 
             rbActivo.AutoSize = true;
-            rbActivo.Location = new Point(1082, 63);
+            rbActivo.Location = new Point(885, 49);
+            rbActivo.Margin = new Padding(2, 2, 2, 2);
             rbActivo.Name = "rbActivo";
-            rbActivo.Size = new Size(84, 27);
+            rbActivo.Size = new Size(69, 22);
             rbActivo.TabIndex = 7;
             rbActivo.TabStop = true;
             rbActivo.Text = "Activo";
@@ -137,9 +138,10 @@
             // rbInactivo
             // 
             rbInactivo.AutoSize = true;
-            rbInactivo.Location = new Point(945, 63);
+            rbInactivo.Location = new Point(773, 49);
+            rbInactivo.Margin = new Padding(2, 2, 2, 2);
             rbInactivo.Name = "rbInactivo";
-            rbInactivo.Size = new Size(98, 27);
+            rbInactivo.Size = new Size(78, 22);
             rbInactivo.TabIndex = 8;
             rbInactivo.TabStop = true;
             rbInactivo.Text = "Inactivo";
@@ -148,18 +150,21 @@
             // 
             // btnNuevo
             // 
-            btnNuevo.Location = new Point(1047, 583);
+            btnNuevo.Location = new Point(857, 456);
+            btnNuevo.Margin = new Padding(2, 2, 2, 2);
             btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new Size(94, 29);
+            btnNuevo.Size = new Size(77, 23);
             btnNuevo.TabIndex = 9;
             btnNuevo.Text = "Nuevo";
             btnNuevo.UseVisualStyleBackColor = true;
+            btnNuevo.Click += btnNuevo_Click_1;
             // 
             // btnCancelar
             // 
-            btnCancelar.Location = new Point(705, 583);
+            btnCancelar.Location = new Point(577, 456);
+            btnCancelar.Margin = new Padding(2, 2, 2, 2);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(94, 29);
+            btnCancelar.Size = new Size(77, 23);
             btnCancelar.TabIndex = 10;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
@@ -167,9 +172,10 @@
             // 
             // btnEditar
             // 
-            btnEditar.Location = new Point(817, 585);
+            btnEditar.Location = new Point(668, 458);
+            btnEditar.Margin = new Padding(2, 2, 2, 2);
             btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(94, 29);
+            btnEditar.Size = new Size(77, 23);
             btnEditar.TabIndex = 11;
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
@@ -177,9 +183,10 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.Location = new Point(929, 583);
+            btnGuardar.Location = new Point(760, 456);
+            btnGuardar.Margin = new Padding(2, 2, 2, 2);
             btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new Size(94, 29);
+            btnGuardar.Size = new Size(77, 23);
             btnGuardar.TabIndex = 12;
             btnGuardar.Text = "Guardar";
             btnGuardar.UseVisualStyleBackColor = true;
@@ -187,29 +194,30 @@
             // 
             // txtBuscar
             // 
-            txtBuscar.Location = new Point(106, 139);
+            txtBuscar.Location = new Point(87, 109);
+            txtBuscar.Margin = new Padding(2, 2, 2, 2);
             txtBuscar.Name = "txtBuscar";
-            txtBuscar.Size = new Size(1163, 30);
+            txtBuscar.Size = new Size(952, 26);
             txtBuscar.TabIndex = 16;
             txtBuscar.TextChanged += txtBuscar_TextChanged;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(3, 139);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(2, 109);
             label5.Name = "label5";
-            label5.Size = new Size(71, 23);
+            label5.Size = new Size(57, 18);
             label5.TabIndex = 15;
             label5.Text = "Buscar";
             // 
             // dgvTemas
             // 
             dgvTemas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTemas.Location = new Point(13, 175);
+            dgvTemas.Location = new Point(11, 137);
+            dgvTemas.Margin = new Padding(2, 2, 2, 2);
             dgvTemas.Name = "dgvTemas";
             dgvTemas.RowHeadersWidth = 51;
-            dgvTemas.Size = new Size(1266, 402);
+            dgvTemas.Size = new Size(1036, 315);
             dgvTemas.TabIndex = 17;
             dgvTemas.CellDoubleClick += dgvTemas_CellDoubleClick;
             // 
@@ -219,9 +227,10 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.Location = new Point(1318, 143);
+            btnBuscar.Location = new Point(1078, 112);
+            btnBuscar.Margin = new Padding(2, 2, 2, 2);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(94, 26);
+            btnBuscar.Size = new Size(77, 20);
             btnBuscar.TabIndex = 18;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = true;
@@ -229,9 +238,9 @@
             // 
             // FrmTema
             // 
-            AutoScaleDimensions = new SizeF(11F, 23F);
+            AutoScaleDimensions = new SizeF(9F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1580, 626);
+            ClientSize = new Size(1293, 490);
             Controls.Add(btnBuscar);
             Controls.Add(dgvTemas);
             Controls.Add(txtBuscar);
@@ -249,6 +258,7 @@
             Controls.Add(label2);
             Controls.Add(txtIdtema);
             Controls.Add(label1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "FrmTema";
             Text = "FrmTema";
             Load += FrmTema_Load;
